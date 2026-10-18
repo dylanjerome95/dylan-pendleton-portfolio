@@ -1,0 +1,85 @@
+/* ==========================================================
+   Bookkeeping page — extra styles only.
+   Base theme lives in css/style.css; this file adds what
+   the bookkeeping page needs and nothing else.
+   ========================================================== */
+
+/* Service group labels */
+.group-label {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--faint);
+  margin: 2.75rem 0 1.25rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+.group-label:first-of-type {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}
+
+/* Honest scope note */
+.scope-note {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--text);
+  border-radius: var(--radius);
+  padding: 1.8rem;
+  align-self: start;
+}
+.scope-note h3 {
+  font-size: 1.15rem;
+  margin-bottom: 1rem;
+}
+.scope-note p {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+.scope-note strong { color: var(--text); }
+.scope-promise {
+  color: var(--text) !important;
+  font-weight: 600;
+  margin-bottom: 0 !important;
+}
+
+/* FAQ */
+.faq-wrap { max-width: 780px; }
+.faq-wrap .section-head { margin-bottom: 2rem; }
+.faq {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--bg-card);
+  margin-bottom: 0.8rem;
+  overflow: hidden;
+}
+.faq summary {
+  cursor: pointer;
+  padding: 1.15rem 1.4rem;
+  font-weight: 600;
+  font-size: 0.98rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after {
+  content: "+";
+  font-size: 1.3rem;
+  color: var(--faint);
+  flex-shrink: 0;
+  transition: transform var(--ease);
+}
+.faq[open] summary::after { transform: rotate(45deg); }
+.faq p {
+  padding: 0 1.4rem 1.3rem;
+  color: var(--muted);
+  font-size: 0.93rem;
+}
+.faq[open] { border-color: var(--border-strong); }
