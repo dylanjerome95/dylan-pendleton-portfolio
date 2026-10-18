@@ -947,6 +947,95 @@ a {
   font-size: 0.84rem;
 }
 
+/* SNHU Honor Roll Achievement */
+.achievement-section {
+  padding: 60px 20px;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.achievement-card {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  padding: 32px;
+  background: linear-gradient(145deg, #17191d, #0e0f12);
+  border: 1px solid #35383e;
+  border-radius: 18px;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.22);
+}
+
+.achievement-badge {
+  flex: 0 0 220px;
+  text-align: center;
+}
+
+.achievement-badge img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.achievement-details {
+  flex: 1;
+}
+
+.achievement-label {
+  color: #c7a45b;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.achievement-details h2 {
+  margin: 10px 0;
+  color: #f5f5f5;
+}
+
+.achievement-school {
+  color: #c7a45b;
+  font-weight: 600;
+}
+
+.achievement-details > p:not(.achievement-label):not(.achievement-school) {
+  color: #c6c8ce;
+  line-height: 1.7;
+}
+
+.achievement-terms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.achievement-terms span {
+  padding: 7px 13px;
+  border: 1px solid #8f733b;
+  border-radius: 20px;
+  color: #e3c47c;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .achievement-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 24px 18px;
+    gap: 20px;
+  }
+
+  .achievement-badge {
+    flex-basis: auto;
+    width: min(100%, 220px);
+  }
+
+  .achievement-terms {
+    justify-content: center;
+  }
+}
 
 /* CONTACT */
 
